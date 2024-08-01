@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface ICreditOperation {
-	public double LoanInterest(double capital,double interest,double duration);
+	public double CalculateInterestToPay(double credit,double interestPrcnt,int duration);
 }

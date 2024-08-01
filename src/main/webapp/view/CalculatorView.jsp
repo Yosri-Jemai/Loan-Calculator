@@ -9,8 +9,8 @@
 		<form action="controller" method="post">
 			<table>
 				<tr>
-					<td>Capital:</td>
-					<td><input type="text" name="capital"></td>
+					<td>Credit:</td>
+					<td><input type="text" name="credit"></td>
 					<td>TND</td>
 				</tr>
 				<tr>

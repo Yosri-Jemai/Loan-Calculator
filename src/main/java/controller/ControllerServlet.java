@@ -6,6 +6,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import model.CreditModel;
 import operations.CreditOperation;
 
 public class ControllerServlet extends HttpServlet{
@@ -25,10 +26,10 @@ public class ControllerServlet extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		double credit = Double.parseDouble(req.getParameter("capital"));
-		double interest = Double.parseDouble(req.getParameter("interest"));
-		double duration = Double.parseDouble(req.getParameter("duration"));
-		//System.out.println(credit+" "+interest+" "+duration);
+		double credit = Double.parseDouble(req.getParameter("credit"));
+		double interestPrcnt = Double.parseDouble(req.getParameter("interest"));
+		int duration = Integer.parseInt(req.getParameter("duration"));
+		CreditModel model = new CreditModel(credit,interestPrcnt,duration);
 	}
 	
 }
