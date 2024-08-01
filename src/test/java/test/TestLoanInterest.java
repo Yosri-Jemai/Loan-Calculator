@@ -20,7 +20,7 @@ public class TestLoanInterest {
 	// Success
 	@Test
 	public void testLoanInterest1() {
-		double result = operation.LoanInterest(200000, 4.5, 240);
+		double result = operation.CalculateInterestToPay(200000, 4.5, 240);
 		double expected = 1265.2987;
 		
 		assertEquals(expected, result, 0.0001);
@@ -29,7 +29,7 @@ public class TestLoanInterest {
 	// Failure
 	@Test
 	public void testLoanInterest2() {
-		double result = operation.LoanInterest(200000, 4.5, 240);
+		double result = operation.CalculateInterestToPay(200000, 4.5, 240);
 		double expected = 1265.2987;
 		
 		assertEquals(expected, result, 0.00001);

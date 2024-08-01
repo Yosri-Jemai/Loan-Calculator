@@ -19,21 +19,21 @@ public class CreditModel {
 	public double getCredit() {
 		return credit;
 	}
-	public void setCredit(double credit) {
-		this.credit = credit;
-	}
+//	public void setCredit(double credit) {
+//		this.credit = credit;
+//	}
 	public double getInterestPrcnt() {
 		return interestPrcnt;
 	}
-	public void setInterestPrcnt(double interestPrcnt) {
-		this.interestPrcnt = interestPrcnt;
-	}
+//	public void setInterestPrcnt(double interestPrcnt) {
+//		this.interestPrcnt = interestPrcnt;
+//	}
 	public int getDuration() {
 		return duration;
 	}
-	public void setDuration(int duration) {
-		this.duration = duration;
-	}
+//	public void setDuration(int duration) {
+//		this.duration = duration;
+//	}
 	public double getInterestToPay() {
 		return interestToPay;
 	}
